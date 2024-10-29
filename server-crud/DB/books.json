@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "To Kill a Mockingbird",
+    "Description": "A novel by Harper Lee, set in the American South, dealing with themes of race and justice."
+  },
+  {
+    "id": 2,
+    "name": "1984",
+    "Description": "A dystopian novel by George Orwell about a totalitarian regime that uses surveillance to control citizens."
+  },
+  {
+    "id": 3,
+    "name": "Pride and Prejudice",
+    "Description": "A romantic novel by Jane Austen, focusing on themes of love, reputation, and social class."
+  },
+  {
+    "id": 4,
+    "name": "The Great Gatsby",
+    "Description": "A novel by F. Scott Fitzgerald, set in the Jazz Age, exploring themes of wealth, love, and the American Dream."
+  },
+  {
+    "id": 5,
+    "name": "Moby Dick",
+    "Description": "A novel by Herman Melville, narrating the adventures of Ishmael as he joins a whaling expedition."
+  },
+  {
+    "id": 6,
+    "name": "7",
+    "description": "7777777777777777777777777777777777"
+  }
+]
