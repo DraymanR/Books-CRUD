@@ -24,18 +24,21 @@ function AddBook() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({id, name, description }),
+                body: JSON.stringify({id, name, 'Description':description }),
+                
             });
 
             if (response.ok) {
-                console.log(JSON.stringify({id, name, description }));
+                console.log(JSON.stringify({id, name, 'Description':description }));
 
                 setMessage('Book added successfully!');
                 setId(0);          
                 setName('');          
-                setDescription('');    
+                setDescription('');   
+                window.location.reload(); 
             } else {
                 setMessage('Failed to add book.');
+                
             }
         } catch (error) {
             console.error('Error adding book:', error);

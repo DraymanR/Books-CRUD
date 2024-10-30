@@ -48,6 +48,8 @@ function UpdateBook({ bookId }) {
 
             if (response.ok) {
                 setMessage('Book updated successfully!');
+                window.location.reload(); 
+
             } else {
                 setMessage('Failed to update book.');
             }

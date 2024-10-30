@@ -22,9 +22,6 @@ exports.getBook = async (req, res) => {
 exports.createBook = async (req, res) => {
     try {
         const book = await bookService.createBook(req.body);
-        console.log(book);
-        
-        // const newBook = {'id': Number(book.id), ...book}
         res.status(201).json(book);
     } catch (error) {
         console.error(error);
@@ -34,11 +31,8 @@ exports.createBook = async (req, res) => {
 
 exports.updateBook = async (req, res) => {
     try {
-        const book = await bookService.updateBook(req.params.id, req.body);
-        console.log("controller updateBook()");
-        
-        console.log(req.params.id, req.body);
-        
+        const book = await bookService.updateBook(Number(req.params.id), req.body);
+        res.json({ message: 'Book update successfully' });        
         res.json(book);
     } catch (error) {
         res.status(500).json({ error: error.message });
